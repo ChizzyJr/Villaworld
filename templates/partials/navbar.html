@@ -1,0 +1,37 @@
+{% with url_name=request.resolver_match.url_name %}
+{% load static %}
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg bg-success {% if url_name == 'rides' %} d-none {% elif url_name == 'termsofuse' %}  d-none {% endif %}">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="{% url 'index' %}"><img src="/villapro/static/img/image-removebg-preview.png" alt="" class="w-50"></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link active text-white" aria-current="page" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active text-white" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active text-white" href="{% url 'contact' %}">Contact</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active text-white" href="{% url 'rides' %}">Rides</a>
+              </li>
+            </ul>
+            <form class="d-flex text-white mx-2" role="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                
+            </form>
+            <form class="d-flex align-items-center border p-1 rounded-1 text-white mx-2">
+                <i class="fa-solid fa-arrow-up mx-2">0</i>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </section>
+  {% endwith %}

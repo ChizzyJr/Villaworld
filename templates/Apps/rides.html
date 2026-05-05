@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Rides {% endblock title %}
+
+{% block content %}
+<section id="rides">
+    <div class="container">
+        <div class="row my-3">
+            <div class="d-flex justify-content-between">
+            <a href="{% url 'index' %}" class="text-decoration-none"><span class="display-5 text-dark">Vill<i class="fa-duotone fa-solid fa-car"></i> C<i class="fa-duotone fa-solid fa-car"></i>rs</span></a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 rounded-3 p-1" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+              </form>
+            </div>
+            <div class="col-md-6 my-3">
+            <div class="card">
+                <img class="card-img-top" height="430" src="/villapro/static/img/2013-toyota-camry-hybrid.jpg" alt="Title" />
+                <div class="card-body">
+                    <h4 class="card-title">Toyota Camry 2013</h4>
+                    <p class="card-text">
+
+
+<ul>
+  <li>Type: Mid-size Sedan</li>
+  <li>Engine:2.5L 4-cylinder (178 hp) 3.5L V6 (268 hp)</li>
+</ul>
+<div class="dropdown open">
+    <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="triggerId"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+    >
+        See More
+    </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <p>Transmission: 6-speed automatic
+Drive: Front-wheel drive (FWD)
+Fuel: Petrol
+Fuel Economy: 25–35 mpg
+Seats: 5
+Highlights: Reliability, comfort, low maintenance</p>
+        
+    </div>
+</div>
+
+</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 my-3">
+            <div class="card">
+                <img class="card-img-top" class="h-100" src="/villapro/static/img/2016-mercedes-benz-c-class-4-door-sedan-c300.jpg" alt="Title" />
+                <div class="card-body">
+                    <h4 class="card-title">Mercedes-Benz C300</h4>
+                    <p class="card-text">
+
+ </p>
+<ul>
+  <li>Type: Compact Luxury Sedan</li>
+  <li>Engine: 2.0L Turbocharged 4-cylinder</li>
+  <li>Power: 241 hp</li>
+</ul>
+
+<div class="dropdown open">
+    <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="triggerId"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+    >
+        See More
+    </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <p>Transmission: 7-speed automatic
+Drive: RWD / AWD
+Fuel: Petrol
+Seats: 5
+Highlights: Sporty feel, luxury interior, advanced tech</p>
+        <!-- <button class="dropdown-item" href="#">Action</button> -->
+    </div>
+</div>
+
+</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="/villapro/static/img/2023-Toyota-Hilux-scaled.webp" alt="Title" />
+                <div class="card-body">
+                    <h4 class="card-title">2023 Toyota Hilux Scaled</h4>
+                
+
+<ul>
+  <li>Type: Pickup Truck</li>
+  <li>Engine Options: 2.4L / 2.7L Petrol 2.4L / 2.8L Turbo Diesel</li>
+</ul>
+<div class="dropdown open">
+    <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="triggerId"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+    >
+        See More
+    </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <p>Transmission: Manual / Automatic
+Drive: RWD / 4WD
+Fuel: Diesel / Petrol
+Seats: 2–5 (single or double cab)
+Highlights: Extreme durability, off-road strength, workhorse</p>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+       <div class="col-md-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="/villapro/static/img/2018_Toyota_Hilux__1_.webp" alt="Title" />
+                <div class="card-body">
+                    <h4 class="card-title">Toyota Hilux 2018</h4>
+                    <ul>
+  <li>Type: Mid-size Pickup Truck</li>
+  <li>Engine: 2.8 L Turbo Diesel 4-cylinder</li>
+  <li>Power: ~177 hp (130 kW)</li>
+</ul>
+
+                    
+
+<div class="dropdown open">
+    <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="triggerId"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+    >
+        See More
+    </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <p>Transmission: 6-speed Manual or 6-speed Automatic
+Drive: 4×4 (part-time) or RWD (varies by trim)
+Fuel: Diesel
+Seats: 5 (Double Cab)
+Fuel Tank: ~80 L
+Highlights: Strong torque for towing, rugged off-road capability, durable build</p>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="/villapro/static/img/Toyota venza 013.jpg" height="235" alt="Title" />
+                <div class="card-body">
+                    <h4 class="card-title">Toyota Venza 013 Model</h4>
+                    
+
+
+
+<ul>
+  <li>Type: Mid-size Crossover SUV</li>
+  <li>Engine: 2.7 L Inline-4 Petrol</li>
+  <li>Power: ~181–182 hp</li>
+</ul>
+ <div class="dropdown open">
+    <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="triggerId"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+    >
+        See More
+    </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <p>Transmission: 5-speed Automatic (base) or 6-speed Automatic on some builds
+Drive: FWD or AWD
+Fuel: Petrol
+Seats: 5
+Fuel Tank: ~67 L (~17.7 gal)
+Highlights: Spacious interior, smooth ride, flexible cargo space</p>
+    </div>
+ </div>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </div>
+</section>
+{% endblock content %}

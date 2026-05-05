@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Homepage {% endblock title %}
+
+{% block content %}
+
+<!-- Landing page -->
+<section id="home">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="slide 3"></button>
+        </div>
+
+        <div class="carousel-inner bg-primary">
+          <div class="carousel-item carousel-height p-5 active" style="background: url(/villapro/static/img/Cars\ 3.jpg) center no-repeat; height: 100vh;">
+            <div class="container my-md-5 my-2 pt-2 text-md-start text-center">
+              <p class="text-center display-3 fw-bold pt-5" style="color: rgb(176, 245, 245);">Villaworld <span class="text-white"><i class="fa-duotone fa-solid fa-car"></i>utos</span></p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-height p-5" style="background: url(/villapro/static/img/Cars\ 4.jpg) center no-repeat; height: 100vh;">
+            <div class="container my-md-5 my-2 pt-2 text-md-start text-center">
+              <p class="text-center mt-5 fw-bolder text-white display-3">Find all available <span style="color: rgb(176, 245, 245);">c<i class="fa-duotone fa-solid fa-car"></i>rs</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!-- ambition -->
+      <h5 class="text-center fs-2 mt-3">Ambition</h5>
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card border-2 border-primary rounded-5 homecard">
+              <div class="card-body">
+                <div class="row my-1">
+                  <div class="col-md-6">
+                  <p class="card-text text-dark">Our Goal is to ensure that our customers get the best and original cars from our platform, connect buyers with suitable vehicles and streamline the car purchasing process. We ensure our customers the best services provision</p>
+                  </div>
+                  <div class="col-md-6">
+                  <img src="/villapro/static/img/undraw_Order_ride_re_372k.png" alt="" class="w-100 d-none d-md-block" />
+                  </div>
+                </div>
+                <h2 class="text-dark text-center contac">Contact Us <a href="{% url 'contact' %}"><i class="text-dark bi bi-arrow-right-circle-fill"></i></a></h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="/villapro/static/img/villaworld autos.webp" class="w-100" data-aos="flip-right" alt="">
+          </div>
+      </div>
+      </div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="row my-2 w-50">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/villapro/static/img/Maybach.jpeg" style="opacity: 0.5;" class="d-block w-100" alt="Text">
+                </div>
+                <div class="carousel-item overlay">
+                  <img src="/villapro/static/img/luxury.jpg" style="opacity: 0.5;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+      </div>
+
+
+
+      <!-- rides -->
+      <section id="cars">
+        <h4 class="text-center fs-1">Rides <i class="bi bi-car-front-fill"></i></h4>
+        <div class="container mb-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="/villapro/static/img/Mercedes Benz.jpg" alt="Title" />
+                <div class="card-body">
+                  <h4 class="card-title">Mercedes GSC S-Class</h4>
+                  <h6 class="card-text">Washington <i class="bi bi-geo-alt"></i>   2018 <i class="bi bi-calendar3"></i></h6>
+                  <button class="mb-2 mx-e mt-2 border-0 p-2 bg-danger text-white rounded-3">Sold!</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="/villapro/static/img/lexus rx350.webp" alt="Title" />
+                <div class="card-body">
+                  <h4 class="card-title">Volvo S90</h4>
+                  <h6 class="card-text">Toronto <i class="bi bi-geo-alt"></i> 2016 <i class="bi bi-calendar3"></i></h6>
+                  <button class="mb-2 mx-e mt-2 border-0 p-2 bg-danger text-white rounded-3">Sold!</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="/villapro/static/img/Volvo.webp" alt="Title" />
+                <div class="card-body">
+                  <h4 class="card-title">Lexus RX350</h4>
+                  <h6 class="card-text">Califionia <i class="bi bi-geo-alt"></i> 2010 <i class="bi bi-calendar3"></i></h6>
+                  <button class="mb-2 mx-e mt-2 border-0 p-2 bg-danger text-white rounded-3">Sold!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="{% url 'rides' %}"><button class="mb-2 mx-e mt-2 border-0 p-2 bg-dark text-white rounded-3">More Cars..</button></a>
+        </div>
+      </section>
+
+      <div class="container my-3">
+        <div class="row">
+          <div class="col-md-7 d-flex rounded-5 gap-3" style="background-color: rgb(230, 244, 244);">
+            <div class="col-md-6 my-4">
+            <h4 class="text-dark" style="padding-left: 70px;">Ready for a new Ride? 
+              <br>Explore the latest version vehicles</h4>
+                <span class="text-dark" style="padding-left: 70px;"><i class="fa-solid fa-check"></i> view latest models</span> <br>
+                <span class="text-dark" style="padding-left: 70px;"><i class="fa-solid fa-check"></i> compare vehicle side-by-side</span> <br>
+                
+
+                <a href="{% url 'rides' %}" style="padding-left: 70px;"><button class="mb-2 mt-5 mx-e mt-2 border-0 p-2 bg-dark text-white rounded-5"><strong>Research new cars</strong> <i class="bi bi-stars"></i></button></a>
+                
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <img src="/villapro/static/img/undraw_electric-car_vlgq-removebg-preview.png" class="w-100 p-1 p-md-2" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+</section>  
+
+{% endblock content %}
