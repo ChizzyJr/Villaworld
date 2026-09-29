@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}
+  Contact
+{% endblock title %}
+
+{% block content %}
+<section id="contact" >
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>E-mail us<i class="fa-solid fa-address-book" style="color: #058af0;"></i></h4>
+          <form action="">
+            {% csrf_token %}
+          <div class="input-group flex-nowrap my-3">
+            <span class="input-group-text" id="addon-wrapping"><i class="bi bi-person"></i></span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <div class="input-group flex-nowrap my-3">
+            <span class="input-group-text" id="addon-wrapping"><i class="bi bi-envelope-at-fill"></i></span>
+            <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="addon-wrapping">
+          </div>
+          <div class="input-group flex-nowrap my-3">
+            <span class="input-group-text" id="addon-wrapping"><i class="bi bi-phone"></i></span>
+            <input type="tel" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="addon-wrapping">
+          </div>
+          <textarea name="" placeholder="Message" class="input-group rounded-3" id="" cols="60" rows="5"></textarea>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-secondary my-3">Submit</button>
+        </div>
+        </form>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+          <img src="/villapro/static/img/undraw_group-video_k4jx.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <h1 class="text-center my-2">OR</h1>
+
+    <div class="container">
+      <div class="row">
+        <h3 class="text-dark">Contact us <i class="fa-solid fa-at"></i></h3>
+        <a href="https://wa.me/+2347067190488?text=Hello%2C%20Villaworld%20ventures%20" class="text-decoration-none text-dark my-1"><img src="/villapro/static/img/logo.png" width="30"  alt=""> +234 706 719 0488, +234 903 501 0125</a>
+        <!-- <a href="" class="my-1"><img src="/villapro/static/img/facebook.png" width="30" alt=""></a> -->
+      
+      </div>
+    </div>
+  </section>
+{% endblock content %}
