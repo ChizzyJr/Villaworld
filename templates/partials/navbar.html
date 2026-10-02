@@ -1,9 +1,9 @@
-{% with url_name=request.resolver_match.url_name %}
 {% load static %}
+{% with url_name=request.resolver_match.url_name %}
   <section id="navbar">
     <nav class="navbar navbar-expand-lg bg-success {% if url_name == 'rides' %} d-none {% elif url_name == 'termsofuse' %}  d-none {% endif %}">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="{% url 'index' %}"><img src="/villapro/static/img/image-removebg-preview.png" alt="" class="w-50"></a>
+          <a class="navbar-brand text-white" href="{% url 'index' %}"><img src="{% static 'img/image-removebg-preview.png' %}" alt="" class="w-50"></a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

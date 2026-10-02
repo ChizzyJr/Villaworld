@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
   Delivery
 {% endblock title %}
@@ -7,7 +8,7 @@
     <div class="container">
         <div class="row my-2">
             <div class="col-md-7">
-                <img src="/villapro/static/img/ChatGPT Image Mar 12, 2026, 09_29_16 AM.png" class="w-100" alt="">
+                <img src="{% static 'img/ChatGPT Image Mar 12, 2026, 09_29_16 AM.png' %}" class="w-100" alt="">
             </div>
             <div class="col-md-5">
                 <p class="lh-lg">At Villaworld Autos, we are committed to making the car buying process smooth, reliable, and convenient for every customer. Our vehicle delivery service ensures that every purchased car is carefully prepared and delivered in excellent condition. Once a purchase is confirmed and payment is completed, our team begins the delivery process. Each vehicle undergoes a final inspection to ensure it meets our quality standards. This includes checking the engine condition, interior cleanliness, exterior appearance, and essential vehicle documents.
