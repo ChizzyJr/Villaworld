@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import *
+from .models import Manufacturer
 
 # Create your views here.
 def index(request):
@@ -11,10 +11,14 @@ def about(request):
 
 
 def contact(request):
-    return render (request, 'Apps/contact.html')
+    if request.method == 'POST':
+        print(request.POST)
+
+    return render(request, 'Apps/contact.html')
 
 def rides(request):
-    return render (request, 'Apps/rides.html')
+    vehicles = Manufacturer.objects.all()
+    return render(request, 'Apps/rides.html', {'vehicles': vehicles})
 
 def termsofuse(request):
     return render (request, 'Apps/termsofuse.html')

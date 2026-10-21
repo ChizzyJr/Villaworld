@@ -10,21 +10,21 @@
       <div class="row">
         <div class="col-md-6">
           <h4>E-mail us<i class="fa-solid fa-address-book" style="color: #058af0;"></i></h4>
-          <form action="">
+          <form method="POST" action="{% url 'contact' %}">
             {% csrf_token %}
           <div class="input-group flex-nowrap my-3">
             <span class="input-group-text" id="addon-wrapping"><i class="bi bi-person"></i></span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
           </div>
           <div class="input-group flex-nowrap my-3">
             <span class="input-group-text" id="addon-wrapping"><i class="bi bi-envelope-at-fill"></i></span>
-            <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="addon-wrapping">
+            <input type="email" name="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="addon-wrapping">
           </div>
           <div class="input-group flex-nowrap my-3">
             <span class="input-group-text" id="addon-wrapping"><i class="bi bi-phone"></i></span>
-            <input type="tel" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="addon-wrapping">
+            <input type="tel" name="phone" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="addon-wrapping">
           </div>
-          <textarea name="" placeholder="Message" class="input-group rounded-3" id="" cols="60" rows="5"></textarea>
+          <textarea name="message" placeholder="Message" class="input-group rounded-3" id="" cols="60" rows="5"></textarea>
           <div class="d-grid">
             <button type="submit" class="btn btn-secondary my-3">Submit</button>
         </div>

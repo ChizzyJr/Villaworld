@@ -5,3 +5,4 @@ __pycache__/
 .env
 .env.*
 !.env.example
+villapro/static/video/villaworld-ad.mp4

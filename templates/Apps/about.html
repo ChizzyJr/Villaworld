@@ -3,6 +3,65 @@
 {% block title %} About Page {% endblock title %}
 
 {% block content %}
+<style>
+  @media (max-width: 767.98px) {
+    #about {
+      overflow-x: hidden;
+    }
+
+    #about .container {
+      max-width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    #about > .container + .container {
+      margin-top: 1rem;
+    }
+
+    #about img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #about .row.gy-3 {
+      row-gap: 1rem;
+    }
+
+    #about .row.gy-3 .card {
+      min-height: 320px;
+    }
+
+    #about .row.gy-3 .card-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #about .row.gy-3 .card-img-overlay {
+      position: relative;
+      inset: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 320px;
+      padding: 1rem;
+      overflow: visible;
+    }
+
+    #about .row.gy-3 .card-text {
+      margin: 0 !important;
+      font-size: 1.05rem !important;
+      line-height: 1.45;
+    }
+
+    #about .card-body {
+      padding: 1rem;
+    }
+  }
+</style>
   <section id="about">
     <div class="contianer-fluid">
       <div class="card bg-dark border-0 text-white">
@@ -15,14 +74,14 @@
 
 
     <div class="container my-5">
-      <i class="bi bi-info-circle display-1 ">Villaworld Autos</i>
+      <i class="bi bi-info-circle display-1 ">Villaworld Unique Ventures</i>
       <div class="row gy-3">
         <div class="col-md-6">
           <div class="card bg-dark border-0 text-white">
             <img class="card-img w-100" src="{% static 'img/abt images.jpg' %}" style="opacity: 0.5;" alt="Title" />
             <div class="card-img-overlay">
               <!-- <h4 class="card-title text-center display-4" data-aos="fade-right" data-aos-duration="100" data-aos-delay="2000" style="font-family: 'Ubuntu', sans-serif;">About Us</h4> -->
-              <p class="card-text text-center fs-2 mb-3" data-aos="fade-right" data-aos-duration="100" data-aos-delay="1000" style="font-family: 'Ubuntu', sans-serif;">Our top priority is the satisfaction of our customers, we sell affordable cars at a negotiable price. <br>Everyone is welcome to buy cars @Villaworld Autos</p>
+              <p class="card-text text-center fs-2 mb-3" data-aos="fade-right" data-aos-duration="100" data-aos-delay="1000" style="font-family: 'Ubuntu', sans-serif;">Our top priority is the satisfaction of our customers, we sell affordable cars at a negotiable price. <br>Everyone is welcome to buy cars @Villaworld Unique Ventures</p>
             </div>
           </div>
         </div>
@@ -31,7 +90,7 @@
             <img class="card-img w-100" src="{% static 'img/abt Solterra.jpg' %}" style="opacity: 0.5;" alt="Title" />
             <div class="card-img-overlay">
               <!-- <h4 class="card-title text-center display-4" data-aos="fade-right" data-aos-duration="100" data-aos-delay="2000" style="font-family: 'Ubuntu', sans-serif;">About Us</h4> -->
-              <h3 class="card-text text-center fs-1 mt-5" data-aos="fade-right" data-aos-duration="100" data-aos-delay="2000" style="font-family: 'Ubuntu', sans-serif;">"@Villaworld Autos we distribute cars to it rightful owners and the necessary paper works"</h3>
+              <h3 class="card-text text-center fs-1 mt-5" data-aos="fade-right" data-aos-duration="100" data-aos-delay="2000" style="font-family: 'Ubuntu', sans-serif;">"@Villaworld Unique Ventures we distribute cars to it rightful owners and the necessary paper works"</h3>
             </div>
           </div>
         </div>
@@ -42,19 +101,19 @@
       <div class="row">
         <div class="col-md-12">
           <h3 class="d-flex gap-1">Who <p class="text-success">we are?</p></h3>
-          <p class="text-center fs-5">Welcome to Villaworld Cars - Your Trusted Car Dealership
-            At Villaworld Cars, we are proud to offer a wide selection of high-quality, reliable vehicles to meet the diverse needs of our customers. Whether you are searching for a new or pre-owned vehicle, our dedicated team is here to guide you through every step of the car-buying experience. Our Vehicle Inventory
-            At Villaworld Cars, we offer a broad range of vehicles, including:</p>
+          <p class="text-center fs-5">Welcome to Villaworld Unique Ventures - Your Trusted Car Dealership
+            At Villaworld Unique Ventures, we are proud to offer a wide selection of high-quality, reliable vehicles to meet the diverse needs of our customers. Whether you are searching for a new or pre-owned vehicle, our dedicated team is here to guide you through every step of the car-buying experience. Our Vehicle Inventory
+            At Villaworld Unique Ventures, we offer a broad range of vehicles, including:</p>
             
             <p class="text-success fs-4 my-3 lh-5"><strong>New Cars: Browse the latest models from top manufacturers, offering cutting-edge features, superior performance, and modern designs. <br>
               Pre-Owned Vehicles: Our certified pre-owned cars undergo rigorous inspections to ensure you drive off with a dependable and affordable option. <br>
               Specialty Vehicles: We also offer specialty cars, including SUVs, trucks, and luxury models, to cater to all types of drivers.</strong></p>
             
-            <h3 class="text-start text-decoration-underline">Why Choose Villaworld Cars?</h3> <br>
+            <h3 class="text-start text-decoration-underline">Why Choose Villaworld Unique Ventures?</h3> <br>
             <p class="lh-2 fw-bolder">Extensive Selection: We carry vehicles from top brands, ensuring a comprehensive range of choices. <br>
             Experienced Sales Team: Our friendly and knowledgeable team is always ready to assist you in finding the perfect vehicle to fit your lifestyle and budget. <br>
             Financing Options: We offer flexible financing options to help you secure the best deal, whether you have good credit or need help finding financing. <br>
-            After-Sales Services: Our commitment doesn't end with the sale. Villaworld Cars provides professional maintenance, repairs, and parts to keep your vehicle running smoothly. <br></p>
+            After-Sales Services: Our commitment doesn't end with the sale. Villaworld Unique Ventures provides professional maintenance, repairs, and parts to keep your vehicle running smoothly. <br></p>
             
            
         </div>
@@ -71,7 +130,7 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title text-white">Visit Us Today <i class="fa-solid fa-location-dot"></i></h5>
-                <p class="card-text text-white">We invite you to visit our showroom, where you can explore our extensive inventory and take a test drive. Whether you're in the market for a family car, an adventurous SUV, or a high-performance sports car, Villaworld Cars has the perfect vehicle for you!
+                <p class="card-text text-white">We invite you to visit our showroom, where you can explore our extensive inventory and take a test drive. Whether you're in the market for a family car, an adventurous SUV, or a high-performance sports car, Villaworld Unique Ventures has the perfect vehicle for you!
             
                   For more information, call us at [Phone Number] or visit our website at [Website URL].</p>
                 
