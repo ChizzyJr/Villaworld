@@ -38,6 +38,21 @@ def contact(request):
 
         
         try:
+            print(
+    "EMAIL CONFIG CHECK:",
+    {
+        "host": settings.EMAIL_HOST,
+        "port": settings.EMAIL_PORT,
+        "tls": settings.EMAIL_USE_TLS,
+        "sender_configured": bool(settings.EMAIL_HOST_USER),
+        "password_configured": bool(settings.EMAIL_HOST_PASSWORD),
+        "password_length": len(settings.EMAIL_HOST_PASSWORD),
+        "recipient_configured": bool(settings.CONTACT_EMAIL),
+        "default_from_matches_sender": (
+            settings.DEFAULT_FROM_EMAIL == settings.EMAIL_HOST_USER
+        ),
+    }
+)
             email = EmailMessage(
                 subject=subject,
                 body=email_message,
